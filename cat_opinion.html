@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="ko" translate="no"><head><meta charset="UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>오피니언 · 華橋時報</title><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+TC:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet"><style>
+:root{--ink:#15110d;--ink-2:#3a342d;--muted:#8a8378;--line:#e7e3db;--line-2:#efece6;--bg:#fff;--accent:#c1121f;--tint:#fbf6f0}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.topbar{border-bottom:1px solid var(--line)}
+.topbar .wrap{height:40px;display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+.topbar .left{display:flex;gap:16px;align-items:center}.topbar .left b{color:var(--ink-2);font-weight:500}
+.topbar .right{display:flex;gap:14px;align-items:center}
+.langs{display:flex;gap:2px}.langs button{background:none;border:none;cursor:pointer;font-family:inherit;font-size:12.5px;color:var(--muted);padding:3px 8px;border-radius:4px}
+.langs button:hover{color:var(--ink)}.langs button.on{color:#fff;background:var(--accent)}
+.mast{padding:22px 0 16px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo-img{height:64px;width:auto;display:block;max-width:100%}
+.logo-sm{height:30px;width:auto;display:block}
+.mast-ad{flex:none;width:300px;height:64px;border:1px dashed var(--line);border-radius:6px;display:grid;place-items:center;color:#b9b2a6;font-size:11px;letter-spacing:.18em;background:var(--line-2)}
+nav.main{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+nav.main .wrap{display:flex;overflow-x:auto;scrollbar-width:none}nav.main .wrap::-webkit-scrollbar{display:none}
+nav.main a{position:relative;white-space:nowrap;padding:14px 15px;font-size:15px;font-weight:500;color:var(--ink-2)}
+nav.main a:hover{color:var(--accent)}nav.main a.on{color:var(--accent);font-weight:700}
+nav.main a.on::after{content:"";position:absolute;left:12px;right:12px;bottom:-1px;height:3px;background:var(--accent);border-radius:2px}
+nav.main a.tag{color:var(--accent);font-weight:700}
+.ticker{border-bottom:1px solid var(--line)}.ticker .wrap{display:flex;align-items:center;gap:14px;height:46px;font-size:14px}
+.ticker .flag{flex:none;background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:4px 9px;border-radius:4px}
+.ticker .line{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500}.ticker .time{margin-left:auto;color:var(--muted);font-size:12.5px}
+section{scroll-margin-top:64px}
+.sec-head{display:flex;align-items:center;gap:10px;margin:34px 0 16px}
+.sec-head h2{font-family:"Noto Serif KR",serif;font-size:21px;font-weight:900}.sec-head .bar{width:4px;height:19px;background:var(--accent);border-radius:2px}
+.sec-head .more{margin-left:auto;font-size:13px;color:var(--muted)}
+.lead{display:grid;grid-template-columns:1.55fr .95fr;gap:30px;margin-top:24px}
+.hero .ph{aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#cfc8ba}
+.hero .cap{font-size:11.5px;color:var(--muted);margin-top:7px}
+.hero .cat{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px;margin:16px 0 10px}
+.hero h1{font-family:"Noto Serif KR",serif;font-size:31px;font-weight:900;line-height:1.3}
+.hero h1 a:hover{color:var(--accent)}
+.hero p{color:var(--ink-2);font-size:15px;margin-top:11px;line-height:1.65}.hero .by{margin-top:12px;font-size:12.5px;color:var(--muted)}
+.rail{border-left:1px solid var(--line);padding-left:26px}
+.rail .tabs{display:flex;gap:18px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.rail .tabs span{font-family:"Noto Serif KR",serif;font-weight:900;font-size:16px}.rail .tabs span.off{color:var(--muted);font-weight:500}
+.rail ul{list-style:none}.rail li{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line-2)}
+.rail li .n{font-family:"Noto Serif KR",serif;font-weight:900;color:var(--accent);font-size:15px;flex:none;width:16px}
+.rail li a{font-size:14.5px;line-height:1.45}.rail li a:hover{color:var(--accent)}
+.ad-sq{margin-top:18px;aspect-ratio:1/1;border:1px dashed var(--line);border-radius:8px;display:grid;place-items:center;color:#bcb5a8;font-size:11px;letter-spacing:.2em;background:var(--line-2);overflow:hidden}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card .ph{aspect-ratio:16/10;border-radius:8px;background:var(--line-2);overflow:hidden;margin-bottom:11px}
+.ph.phx{position:relative}.ph.phx img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;background:linear-gradient(135deg,#efe9de,#e2dbca)}
+.tile .ts{font-family:"Noto Serif TC",serif;font-weight:900;font-size:30px;color:var(--accent);opacity:.85;line-height:1}
+.tile .tk{font-family:"Noto Serif KR",serif;font-weight:700;font-size:14px;color:var(--ink-2);letter-spacing:.06em}
+.card h3{font-family:"Noto Serif KR",serif;font-size:17px;font-weight:700;line-height:1.4}.card.sm h3{font-size:15px}
+.card h3 a:hover{color:var(--accent)}.card p{font-size:13px;color:var(--ink-2);margin-top:7px;line-height:1.55}
+.card .meta{font-size:12px;color:var(--muted);margin-top:8px}.card .ka{font-size:11px;color:var(--accent);font-weight:700}
+.rule{height:1px;background:var(--line);margin:40px 0 0}
+.band{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:24px}
+.list-clean{list-style:none}.list-clean li{padding:12px 0;border-bottom:1px solid var(--line-2);display:flex;gap:10px;align-items:baseline}
+.list-clean li .dot{flex:none;width:5px;height:5px;border-radius:50%;background:var(--accent);transform:translateY(-2px)}
+.list-clean li a{font-size:14.5px;color:var(--ink-2)}.list-clean li a:hover{color:var(--accent)}.list-clean li .t2{margin-left:auto;flex:none;color:var(--muted);font-size:11.5px}
+.pill{display:inline-block;font-size:10.5px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:3px;padding:1px 6px;margin-right:7px;flex:none}.pill.gov{color:var(--ink-2);border-color:var(--line)}
+.ad-strip{margin:34px 0 0;height:90px;border:1px dashed var(--line);border-radius:8px;display:grid;place-items:center;color:#bcb5a8;font-size:11px;letter-spacing:.2em;background:var(--line-2);overflow:hidden}
+.note{margin:22px 0 0;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:13px 16px;font-size:12.5px;color:var(--ink-2);line-height:1.7}.note b{color:var(--accent)}
+footer{margin-top:56px;border-top:3px double var(--ink);background:#faf8f4}footer .wrap{padding:34px 24px 44px}
+.f-part{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.f-part a{font-size:13px;font-weight:700;color:var(--accent)}
+.f-legal{font-size:12px;color:var(--muted);line-height:1.9}.f-legal b{color:var(--ink-2);font-weight:500}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:11.5px;color:var(--muted)}.trust span{display:inline-flex;align-items:center;gap:6px}.trust span::before{content:"\2713";color:var(--accent);font-weight:700}
+.adbanner{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-style:solid!important;border-color:var(--line)!important;background:#fff!important;color:var(--ink)!important;text-decoration:none;letter-spacing:normal;position:relative;padding:6px 12px;text-align:center;overflow:hidden}
+.adbanner b{font-family:"Noto Serif KR",serif;font-size:15px;font-weight:700;line-height:1.35}
+.adbanner .adsub{font-size:12px;color:var(--muted)}
+.adbanner img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.adbanner .adtag{position:absolute;top:6px;right:8px;font-size:9px;color:#b9b2a6;border:1px solid var(--line);border-radius:3px;padding:0 4px;letter-spacing:.1em}
+.adempty{text-decoration:none}.adempty:hover{color:var(--accent)!important;border-color:var(--accent)!important}
+@media (max-width:880px){.lead{grid-template-columns:1fr}.rail{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:20px}.grid2,.grid3,.grid4{grid-template-columns:1fr 1fr}.band{grid-template-columns:1fr}.mast-ad{display:none}.logo-img{height:48px}}
+</style></head><body class="ko"><div class="topbar"><div class="wrap"><div class="left"><a class="t" href="sinobridge_edition_2026-06-08.html" data-ko="← 홈으로" data-tc="← 返回首頁" data-sc="← 返回首页" data-en="← Home">← 홈으로</a></div><div class="right"><div class="langs" id="langs"><button data-l="tc">繁</button><button data-l="sc">简</button><button data-l="ko" class="on">한</button><button data-l="en">EN</button></div></div></div></div><div class="wrap mast"><a class="brand" href="#headline"><img class="logo-img" src="logo.png" alt="華橋時報 Sinophone Bridge Times"></a></div><div class="wrap"><div class="sec-head"><span class="bar"></span><h2 class="t" data-ko="오피니언" data-tc="評論" data-sc="评论" data-en="Opinion">오피니언</h2><span class="t more" data-ko="전체" data-tc="全部" data-sc="全部" data-en="All">전체</span></div><div class="grid3"><article class="card"><div class="ph phx"><span class="tile"><span class="ts">橋</span><span class="tk">오피니언</span></span><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/NYTimes-Page1-11-11-1918.jpg" alt="" onerror="this.style.display='none'"></div><span class="t ka" data-ko="오피니언" data-tc="評論" data-sc="评论" data-en="Opinion">오피니언</span><h3><a href="art_editorial-bridge.html" class="t" data-ko="[사설] 환율 폭등기, 화인 가정을 위한 '정보의 다리'" data-tc="[社論] 匯率飆升之際 為華人家庭搭「資訊之橋」" data-sc="[社论] 汇率飙升之际 为华人家庭搭「资讯之桥」" data-en="[Editorial] In a Currency Storm, an Information Bridge for Chinese Families">[사설] 환율 폭등기, 화인 가정을 위한 '정보의 다리'</a></h3><p class="t" data-ko="불안할수록 필요한 건 정확한 사실과 비교다. 우리의 역할." data-tc="越不安，越需要正確事實與比較。這是我們的角色。" data-sc="越不安，越需要正确事实与比较。这是我们的角色。" data-en="The more anxious the moment, the more we need facts and comparison.">불안할수록 필요한 건 정확한 사실과 비교다. 우리의 역할.</p><div class="meta">2026.06.08</div></article><article class="card"><div class="ph phx"><span class="tile"><span class="ts">橋</span><span class="tk">오피니언</span></span><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Tangyue_Village%2C_2021-09-26_13.jpg" alt="" onerror="this.style.display='none'"></div><span class="t ka" data-ko="오피니언" data-tc="評論" data-sc="评论" data-en="Opinion">오피니언</span><h3><a href="art_column-140.html" class="t" data-ko="[칼럼] 140년 화교사, 숫자보다 깊은 뿌리" data-tc="[專欄] 140年華僑史 比數字更深的根" data-sc="[专栏] 140年华侨史 比数字更深的根" data-en="[Column] 140 Years: Roots Deeper Than Numbers">[칼럼] 140년 화교사, 숫자보다 깊은 뿌리</a></h3><p class="t" data-ko="인구는 줄어도 기억과 관계는 남는다. 기록의 가치." data-tc="人口減少，記憶與關係仍在。記錄的價值。" data-sc="人口减少，记忆与关系仍在。记录的价值。" data-en="Numbers fall, but memory and ties remain.">인구는 줄어도 기억과 관계는 남는다. 기록의 가치.</p><div class="meta">2026.06.08</div></article><article class="card"><div class="ph phx"><span class="tile"><span class="ts">橋</span><span class="tk">오피니언</span></span><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Wang_Xianzhi_Imitation_by_Tang_Dynasty.jpg" alt="" onerror="this.style.display='none'"></div><span class="t ka" data-ko="오피니언" data-tc="評論" data-sc="评论" data-en="Opinion">오피니언</span><h3><a href="art_column-language.html" class="t" data-ko="[칼럼] 다리를 놓는 언어 — 번체·간체·한국어·영어" data-tc="[專欄] 搭橋的語言 — 繁體·簡體·韓語·英語" data-sc="[专栏] 搭桥的语言 — 繁体·简体·韩语·英语" data-en="[Column] The Language of Bridges — Traditional, Simplified, Korean, English">[칼럼] 다리를 놓는 언어 — 번체·간체·한국어·영어</a></h3><p class="t" data-ko="같은 사실을 네 개의 언어로 전한다는 것은 무엇을 의미하는가." data-tc="以四種語言傳遞同一事實，意味著什麼。" data-sc="以四种语言传递同一事实，意味著什么。" data-en="What it means to tell the same fact in four languages.">같은 사실을 네 개의 언어로 전한다는 것은 무엇을 의미하는가.</p><div class="meta">2026.06.08</div></article></div></div><footer><div class="wrap"><div class="f-legal"><b>華橋時報 · Sinophone Bridge Times · sinobridgetimes.com</b></div></div></footer><script>
+function applyLang(l){document.body.className=l;
+document.querySelectorAll('.lang').forEach(function(d){d.classList.toggle('hide',!d.classList.contains(l))});
+document.querySelectorAll('.t').forEach(function(el){var v=el.getAttribute('data-'+l);if(v==null)return;if(v.indexOf('<')>=0)el.innerHTML=v;else el.textContent=v;});
+document.documentElement.lang=(l==='ko'?'ko':l==='en'?'en':l==='sc'?'zh-Hans':'zh-Hant');}
+function setActiveBtn(l){document.querySelectorAll('#langs button').forEach(function(x){x.classList.toggle('on',x.dataset.l===l)});}
+document.querySelectorAll('#langs button').forEach(function(b){b.addEventListener('click',function(){
+setActiveBtn(b.dataset.l);applyLang(b.dataset.l);try{localStorage.setItem('hqsb_lang',b.dataset.l)}catch(e){}});});
+(function(){var s=null;try{s=localStorage.getItem('hqsb_lang')}catch(e){}if(s){setActiveBtn(s);applyLang(s);}})();
+</script></body></html>
