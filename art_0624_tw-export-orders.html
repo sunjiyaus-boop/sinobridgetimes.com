@@ -37,6 +37,4 @@ document.querySelectorAll('.t').forEach(function(el){var v=el.getAttribute('data
 document.documentElement.lang=(l==='ko'?'ko':l==='en'?'en':l==='sc'?'zh-Hans':'zh-Hant');}
 function setActiveBtn(l){document.querySelectorAll('#langs button').forEach(function(x){x.classList.toggle('on',x.dataset.l===l)});}
 document.querySelectorAll('#langs button').forEach(function(b){b.addEventListener('click',function(){
-setActiveBtn(b.dataset.l);applyLang(b.dataset.l);try{localStorage.setItem('hqsb_lang',b.dataset.l)}catch(e){}});});
-(function(){var s=null;try{s=localStorage.getItem('hqsb_lang')}catch(e){}if(s){setActiveBtn(s);applyLang(s);}})();
-</script></body></html>
+setActiveBtn(b.dataset.l);applyLang(b.dataset.l
